@@ -1,0 +1,10 @@
+.wrapper {
+    width: 100%;
+    max-width: 90%;
+    margin:  auto;
+    background-image: url("bg-cover.png");
+}
+
+.glider {
+    text-align: center;
+}
