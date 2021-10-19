@@ -1,10 +1,52 @@
+body {
+    margin: 0;
+    font-family: 'Varta';
+}
+
+.logo {
+    margin-left: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+    margin-left: 10px;
+    font-family: none;
+    font-style: italic;
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
 .wrapper {
     width: 100%;
-    max-width: 90%;
+    max-width: 95%;
     margin:  auto;
-    background-image: url("bg-cover.png");
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+.container {
+    margin-top: 140px;
+    margin-right: 85px;
+    margin-left: 85px;
+    margin-bottom: 80px;
+    transition: transform .2s;
+}
+.container:hover {
+    transform: scale(1.4);
+    cursor: pointer;
+    background-image: url("images/wheel-bg.jpg");
+    border: 1px solid gray;
+}
+
+.glider-contain {
+    top: 5rem;
 }
 
 .glider {
     text-align: center;
+}
+
+.background {
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    object-fit: cover;
 }
