@@ -4,69 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wheeels</title>
     <link rel="stylesheet" type="text/css" href="./glider.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <link rel="stylesheet" href="https://fonts.gstatic.com/s/varta/v5/Qw3TZQpJHj_6LxvXtvRzMA.woff2">
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 </head>
 <body>
-    <p>WHEELS</p>
+    <h3 class="logo">WHEELS</h3>
     <br>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste dicta laboriosam, at eius qui aut nam tempore sequi<br> 
+    <p class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste dicta laboriosam, at eius qui aut nam tempore sequi<br> 
         praesentium, porro quisquam commodi, nesciunt asperiores vero quidem obcaecati possimus suscipit molestiae.</p>
 
+    <img src="images/bg-cover.png" alt="" class="background" height="690px"></img>
 
 <div class="wrapper">
   <div class="glider-contain">
     <div class="glider">
-      <div class="container" onclick="enlargeImg()" id="img1">
-          <img src="images/wgu.png" alt="" width="230" height="230">
-          <p><b>17-INCH ALUMINUM WHEEL, FULLY <br>
+      <div class="container">
+          <img src="images/wgu.png" alt="1" width="230" height="230">
+          <p><b>17-INCH ALUMINUM WHEEL, FULLY
              PAINTED SILVER LITHO</b><br>
              Standard on Touring FWD<br>
           <b>(WGU)</b>
           </p>
       </div>
-      <div onclick="enlargeImg()" id="img1">
-          <img src="images/wjr.png" alt="" width="230" height="230">
-          <p><b>17-INCH ALUMINUM DIAMOND-CUT<br>
+      <div class="container">
+          <img src="images/wjr.png" alt="2" width="230" height="230">
+          <p><b>17-INCH ALUMINUM DIAMOND-CUT
              WHEEL WIYH BALTIC GRAY POCKETS</b><br>
-             Standard on Touring L FWD/Hybrid and<br>
+             Standard on Touring L FWD/Hybrid and
              Touring Hybrid<br>
           <b>(WJR)</b>
           </p>
       </div>
-      <div onclick="enlargeImg()" id="img1">
-          <img src="images/wp6.png" alt="" width="230" height="230">
-          <p><b>18-INCH ALUMINUM WHEEL WITH<br>
+      <div class="container">
+          <img src="images/wp6.png" alt="3" width="230" height="230">
+          <p><b>18-INCH ALUMINUM WHEEL WITH
             FORESHADOW FINISH</b><br>
-            Included with S Appearance Package on<br>
-            Touring Hybrid, Touring L Hybrid and<br>
+            Included with S Appearance Package on
+            Touring Hybrid, Touring L Hybrid and
             Limited Hybrid<br> 
           <b>(WP6)</b>
           </p>
       </div>
-      <div onclick="enlargeImg()" id="img1">
-          <img src="images/wpf.png" alt="" width="230" height="230">
-          <p><b>18-INCH ALUMINUM WHEEL WITH<br>
+      <div class="container">
+          <img src="images/wpf.png" alt="4" width="230" height="230">
+          <p><b>18-INCH ALUMINUM WHEEL WITH
             FORESHADOW FINISH</b><br>
             Standard on Touring FWD<br>
             <b>(WPF)</b>
           </p>
       </div>
     </div>
-
-    
     <button aria-label="Previous" class="glider-prev"><i class="fas fa-chevron-left"></i></button>
     <button aria-label="Next" class="glider-next"><i class="fas fa-chevron-right"></i></button>
   </div>
 </div>
 
 
-    <script src="./glider.min.js"></script>
-    <script src="./app.js"></script>
     <script>
         new Glider(document.querySelector('.glider'), {
            slidesToShow: 3,
@@ -78,7 +76,8 @@
         });
     </script>
     
-    <script>
+
+    <!-- <script>
       // Get the img object using its Id
       img = document.getElementById("img1");
       // Function to increase image size
@@ -87,15 +86,17 @@
         img.style.transform = "scale(1.5)";
         // Animation effect 
         img.style.transition = "transform 0.25s ease";
+        img.style.backgroundImage = "url(images/wheel-bg.jpg)";
       }
-      // Function to reset image size
+
+        // Function to reset image size
       function resetImg() {
         // Set image size to original
         img.style.transform = "scale(1)";
         img.style.transition = "transform 0.25s ease";
+        img.style.backgroundImage = "none";
       }
-    </script>
+    </script> -->
+
 </body>
 </html>
-
-        
